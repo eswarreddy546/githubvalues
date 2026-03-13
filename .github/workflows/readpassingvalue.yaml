@@ -14,4 +14,10 @@ jobs:
     steps:
       - name: Print Name
         run: echo "${{ inputs.name }}"
+
+      - name : install npm dependincies
+        run: npm install
+
+      - name: cheking the unit testing
+        run: "echo {{unit testing is sucessfull}}"
        

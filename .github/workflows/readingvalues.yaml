@@ -24,18 +24,18 @@ jobs:
       - name: Print Name
         run: echo "Hello ${{ inputs.name }}"
 
-      - name: Print Name
-        run: |
-          echo "Hello ${{ inputs.name }}"
+      # - name: Print Name
+      #   run: |
+      #     echo "Hello ${{ inputs.name }}"
 
-      - name: Print Project
-        run: |
-          echo "Project: ${{ inputs.project }}"
+      # - name: Print Project
+      #   run: |
+      #     echo "Project: ${{ inputs.project }}"
 
-      - name: Print Component
-        run: |
-          echo "Component: ${{ inputs.component }}"
+      # - name: Print Component
+      #   run: |
+      #     echo "Component: ${{ inputs.component }}"
 
-      - name: Print Environment
-        run: |
-          echo "Environment: ${{ inputs.environment }}"
+      # - name: Print Environment
+      #   run: |
+      #     echo "Environment: ${{ inputs.environment }}"

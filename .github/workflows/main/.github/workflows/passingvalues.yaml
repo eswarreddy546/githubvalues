@@ -4,6 +4,6 @@ on: push
 
 jobs:
   call-reusable:
-    uses: ./.github/workflows/readvalues.yaml
+    uses: ./.github/workflows/readingvalues.yaml
     with:
       name: "Eswar eshu Reddy"

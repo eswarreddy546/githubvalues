@@ -1,0 +1,9 @@
+name: mainpassingvalues
+
+on: push
+
+jobs:
+  call_reusable:
+    uses: ./.github/workflows/readpassingvalue.yaml
+    with:
+      name: "Eswar Reddy Vatticharla"

@@ -1,0 +1,9 @@
+name: Main Workflow
+
+on: push
+
+jobs:
+  call-reusable:
+    uses: ./.github/workflows/readvalues.yaml
+    with:
+      name: "Eswar eshu Reddy"

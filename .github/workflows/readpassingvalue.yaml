@@ -19,7 +19,8 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Check files
-        run: ls -la
+        run: cd  githubvalues & ls -la
+        # run: ls -la
 
       - name: Install npm dependencies
         run: npm install

@@ -19,11 +19,14 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Check files
+        run: pwd
+
+      - name: Check files
         run: cd githubvalues && ls -la
         # run: ls -la
 
-      - name: Install npm dependencies
-        run: npm install
+      # - name: Install npm dependencies
+      #   run: npm install
 
       - name: Checking the unit testing
         run: echo "Unit testing is successful"

@@ -28,9 +28,9 @@ jobs:
       #   run: |
       #     echo "Hello ${{ inputs.name }}"
 
-      # - name: Print Project
-      #   run: |
-      #     echo "Project: ${{ inputs.project }}"
+      - name: Print Project
+        run: |
+          echo "Project: ${{ inputs.project }}"
 
       # - name: Print Component
       #   run: |

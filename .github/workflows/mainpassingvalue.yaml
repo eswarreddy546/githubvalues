@@ -7,6 +7,6 @@ jobs:
     uses: ./.github/workflows/readpassingvalue.yaml
     with:
       name: "Eswar Reddy Vatticharla vatticharla"
-      # project: "Roboshop"
+      project: "Roboshop"
       # component: "Dev"
       # environment: "DevEnv"

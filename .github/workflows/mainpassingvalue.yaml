@@ -6,7 +6,7 @@ jobs:
   call_reusable:
     uses: ./.github/workflows/readpassingvalue.yaml
     with:
-      name: "Eswar Reddy Vatticharla"
+      name: "Eswar Reddy Vatticharla vatticharla"
       # project: "Roboshop"
       # component: "Dev"
       # environment: "DevEnv"

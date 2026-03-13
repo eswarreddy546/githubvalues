@@ -15,9 +15,11 @@ jobs:
       - name: Print Name
         run: echo "${{ inputs.name }}"
 
-      - name : install npm dependincies
-        run: npm install
+      - name: Checkout code
+        uses: actions/checkout@v4
 
+      - name: Install npm dependencies
+        run: npm install
 
       - name: Checking the unit testing
         run: echo "Unit testing is successful"

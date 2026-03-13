@@ -1,4 +1,4 @@
-name: Reusable Workflow 2
+name: Reusable Workflow
 
 on:
   workflow_call:
@@ -6,25 +6,32 @@ on:
       name:
         required: true
         type: string
-      Project:
+      project:
         required: true
         type: string
-      componet:
+      component:
         required: true
         type: string
-      Environemnt:
+      environment:
         required: true
         type: string
 
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
-      - run: echo "Hello vatticharla ${{ inputs.name }}"
+      - name: Print Name
+        run: |
+          echo "Hello ${{ inputs.name }}"
 
-      - run: echo "${{ inputs.Project }}"
+      - name: Print Project
+        run: |
+          echo "Project: ${{ inputs.project }}"
 
-      - run: echo "${{ inputs.componet }}"
+      - name: Print Component
+        run: |
+          echo "Component: ${{ inputs.component }}"
 
-      - run: echo "${{ inputs.Environemnt }}"
+      - name: Print Environment
+        run: |
+          echo "Environment: ${{ inputs.environment }}"

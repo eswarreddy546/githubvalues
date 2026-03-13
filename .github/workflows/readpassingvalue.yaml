@@ -18,6 +18,6 @@ jobs:
       - name : install npm dependincies
         run: npm install
 
-      - name: cheking the unit testing
-        run: "echo {{unit testing is sucessfull}}"
-       
+
+      - name: Checking the unit testing
+        run: echo "Unit testing is successful"

@@ -14,3 +14,4 @@ jobs:
     steps:
       - name: Print Name
         run: echo "${{ inputs.name }}"
+       

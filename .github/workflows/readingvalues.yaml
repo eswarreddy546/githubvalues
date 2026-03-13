@@ -6,6 +6,15 @@ on:
       name:
         required: true
         type: string
+      Project:
+        required: true
+        type: string
+      componet:
+        required: true
+        type: string
+      Environemnt:
+        required: true
+        type: string
 
 jobs:
   test:
@@ -13,3 +22,9 @@ jobs:
 
     steps:
       - run: echo "Hello vatticharla ${{ inputs.name }}"
+
+      - run: echo "${{ inputs.Project }}"
+
+      - run: echo "${{ inputs.componet }}"
+
+      - run: echo "${{ inputs.Environemnt }}"

@@ -19,7 +19,11 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
+      - name: Print Name
+        run: echo "Hello ${{ inputs.name }}"
+
       - name: Print Name
         run: |
           echo "Hello ${{ inputs.name }}"
